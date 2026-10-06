@@ -15,3 +15,6 @@ def test_integer_raises_error():
         count_words(3)
     error = str(e.value)
     assert error == "Argument must be a string"
+
+def test_works_with_commas():
+    assert count_words("hello,there,i,write,like,this") == 6
